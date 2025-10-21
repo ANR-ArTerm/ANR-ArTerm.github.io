@@ -1,0 +1,33 @@
+<head xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title></title>
+   <link rel="stylesheet" type="text/css" href="../../style.css">
+   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+</head><body xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <h1>Index lieu</h1>
+   <p><a href="../indexlieu.html">Revenir à l'index lieu</a></p>
+   <h2>Pesaro</h2>
+   <p>
+      - Nom en français : Pesaro<br>
+      - Nom en italien : Pesaro</p>
+   <p><a href="https://www.wikidata.org/wiki/Q13134">Lien vers Wikidata</a></p>
+   <div id="map"></div><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script>
+                        // Coordonnées : latitude, longitude
+                        const lat = 43.91015;
+                        const lon = 12.9133;
+                        
+                        const map = L.map('map').setView([lat, lon], 3);
+                        
+                        // Couche de fond OpenStreetMap
+                        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                        attribution:
+                        '© <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+                        maxZoom: 18,
+                        }).addTo(map);
+                        
+                        // Marqueur
+                        L.marker([lat, lon]).addTo(map)
+                        .bindPopup('<strong>Pesaro</strong>')
+                            .openPopup();
+                    </script></body>
