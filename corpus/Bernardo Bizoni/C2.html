@@ -4,18 +4,20 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Diario di viaggio di Vincenzo Giustiniani</title>
-      <link rel="stylesheet" type="text/css" href="../style.css">
+      <link rel="stylesheet" type="text/css" href="../../style.css">
    </head>
    <body>
+      <div id="header"></div>
       <h1>Diario di viaggio di Vincenzo Giustiniani</h1>
+      <p><a href="sommaire.html">Revenir au sommaire</a></p>
       <h2>Le Château de Gaillon</h2>
       <p>Il <span class="object" data-ref="#ChateauGaillon">palazzo di Gaglione</span> fu fatto dal
-         gran cardinal di <a href="../index/indexlieu/Rouen.html" class="place" data-ref="#Rouen">Roano</a> <span class="person" data-ref="#GeorgesDAmboise">Giorgio Ambuesa</span> in questo sito d'aria perfetta e commodo per
-         la riviera, in mezzo tra Roano suo vescovato e <a href="../index/indexlieu/Paris.html" class="place" data-ref="#Paris">Parigi</a>, dov'egli era padrone e maneggiava tutta l'entrata di quel re
+         gran cardinal di <a href="../../index/indexlieu/Rouen.html" class="place" data-ref="#Rouen">Roano</a> <span class="person" data-ref="#GeorgesDAmboise">Giorgio Ambuesa</span> in questo sito d'aria perfetta e commodo per
+         la riviera, in mezzo tra Roano suo vescovato e <a href="../../index/indexlieu/Paris.html" class="place" data-ref="#Paris">Parigi</a>, dov'egli era padrone e maneggiava tutta l'entrata di quel re
          (per quanto mi fu detto). Ebbe questi un altro fratello cardinale, che fabricò
-         <span class="object" data-ref="">Santa Cecilia</span> di <a href="../index/indexlieu/Rome.html" class="place" data-ref="#Rome">Roma</a>. All'entrata di questo palazzo si passa per un ponte levatore di
+         <span class="object" data-ref="">Santa Cecilia</span> di <a href="../../index/indexlieu/Rome.html" class="place" data-ref="#Rome">Roma</a>. All'entrata di questo palazzo si passa per un ponte levatore di
          legno, poi s'entra in un bel cortile, ove in mezzo vi è una bella fontana con un vaso
-         doppio tondo, grande, mandatoli da' Genovesi d'<a href="../index/indexlieu/Italie.html" class="place" data-ref="#Italie">Italia</a>, quali avendo in quel tempo disgustato il re, avevano bisogno
+         doppio tondo, grande, mandatoli da' Genovesi d'<a href="../../index/indexlieu/Italie.html" class="place" data-ref="#Italie">Italia</a>, quali avendo in quel tempo disgustato il re, avevano bisogno
          del mezzo suo. Intomo per tutto in alto nicchi belli, ovati, pieni di teste di statue
          belle come quelle di <span class="object" data-ref="">Nonsicci</span>, e le finestre tutte con piramidi ed altri lavori di
          pietra intagliati con disegno; portichi attorno con camere. Abasso, nell'appartamento
@@ -26,12 +28,12 @@
          addobbate, ed a man destra, al pari delle finestre delle stanze, un bel corridore
          longo quanto tirano le stanze tutte, con li parapetti di pietra, donde si scopre
          bella e lontana vista, e particolarmente quella del gran giardino d'abasso del
-         palazzo e d' un padiglione diesso fatto di disegno portato d'<a href="../index/indexlieu/Italie.html" class="place" data-ref="#Italie">Italia</a>, ed un parco che gira sei miglia, pieno di daini, cervi; una
+         palazzo e d' un padiglione diesso fatto di disegno portato d'<a href="../../index/indexlieu/Italie.html" class="place" data-ref="#Italie">Italia</a>, ed un parco che gira sei miglia, pieno di daini, cervi; una
          bellissima cappella piena di figure di rilievo e mezzo rilievo: in specie un
          <span class="object" data-ref="#ColombeSaintGeorges">quadro grande all'altare, di marmo
             intagliato, un San Giorgio a cavallo che uccide un dragone</span>, se bene
          il drago fu tenuto dal marchese troppo grande e sproporzionato; e si disse che il
-         detto quadro fosse stato fatto in <a href="../index/indexlieu/Italie.html" class="place" data-ref="#Italie">Italia</a>, e di
+         detto quadro fosse stato fatto in <a href="../../index/indexlieu/Italie.html" class="place" data-ref="#Italie">Italia</a>, e di
          là venuto in quel tempo. Il <span class="person" data-ref="#FrancoisDeJoyeuse">cardinal di Gioiosa</span> ci fa molti ed utili miglioramenti,
          in specie un gioco di palla alla francese, una galeria per tenerci lo studio che è
          d'ottomila pezzi di libri, di valore di scudi trentamila. Siid un camerino del
@@ -42,13 +44,20 @@
          da
          basso, per essere cascata pochi giorni sono. Uno studiolo di radiche di rose, che
          aprendo quelli secreti butta odore mirabile. Vi erano altre gallerie più piccole con
-         quadri portati di <a href="../index/indexlieu/Rome.html" class="place" data-ref="#Rome">Roma</a> di diversi principi, papi,
+         quadri portati di <a href="../../index/indexlieu/Rome.html" class="place" data-ref="#Rome">Roma</a> di diversi principi, papi,
          e cardinali, e tra l'altri vi era il cardinal Giustiniano. Una bellissima guardarobba
          di paramenti ed altro, e tra l'altre cose un letto che vale ventimila scudi, con
          perle assai. </p>
       <footer>
          <hr>
          <p>Edition numérique par Arterm, 2025.</p>
-      </footer>
-   </body>
+      </footer><script>
+                            // Charger et insérer le header
+                            fetch("../../header.html")
+                            .then(response => response.text())
+                            .then(html => {
+                            document.getElementById("header").innerHTML = html;
+                            })
+                            .catch(err => console.error("Erreur de chargement du header :", err));
+                        </script></body>
 </html>

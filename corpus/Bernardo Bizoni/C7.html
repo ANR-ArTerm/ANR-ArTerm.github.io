@@ -4,10 +4,12 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Diario di viaggio di Vincenzo Giustiniani</title>
-      <link rel="stylesheet" type="text/css" href="../style.css">
+      <link rel="stylesheet" type="text/css" href="../../style.css">
    </head>
    <body>
+      <div id="header"></div>
       <h1>Diario di viaggio di Vincenzo Giustiniani</h1>
+      <p><a href="sommaire.html">Revenir au sommaire</a></p>
       <h2>Saint-Cloud</h2>
       <p>Il <span class="person" data-ref="#VincenzoGiustiniani">signor Vincenzo</span> fu visitato dal nipote di monsignor Volta e dalla ... genovese, ed
          il secretario del nunzio venne a pigliare il <span class="person" data-ref="#VincenzoGiustiniani">signor Vincenzo</span> con la carrozza, dove
@@ -17,14 +19,14 @@
          tutti quadri del <span class="person" data-ref="#Bassano">Bassano</span>, come anco in un camerino del re, vicino a la camera, ove
          mangia per lo più; (a Fontanablò il re ha un quadro di <span class="person" data-ref="#LeonardoDaVinci">Leonardo da Vinci</span> ed un altro di <span class="person" data-ref="#Raphael">Raffaele</span> e di
          quello non se ne vede altrove, perché mori qui) noi non li potessimo vedere, perché
-         il re tiene le chiavi in <a href="../index/indexlieu/Paris.html" class="place" data-ref="#Paris">Parigi</a>. In un'altra
+         il re tiene le chiavi in <a href="../../index/indexlieu/Paris.html" class="place" data-ref="#Paris">Parigi</a>. In un'altra
          galleria di Gondi, quadri tutti di re e regine di questo regno; in un'altra, di
          uomini e donne; in un'altra, più illustri in arme, in lettere o in bellezza, tra
          l'altre la madre di don <span class="person" data-ref="#VirginioOrsini">Virginio Orsino</span>, che fu <span class="person" data-ref="#IsabelleDeMedicis">Isabella de' Medici</span>, simile alla
          duchessa Sforza sua figlia; ed un altro di <span class="person" data-ref="#CleliaFarnese">Cleria Cesarini</span>. Sopra un camino il re
          <span class="person" data-ref="#FrancoisIer">Francesco</span> e <span class="person" data-ref="#CharlesQuint">Carlo V</span> che si toccano la mano, ed è la pace che fecero tra loro, di mano
-         del <span class="person" data-ref="#FrancescoSalviati">Salviati</span>. Le camere addobbate con letti di broccato di <a href="../index/indexlieu/Florence.html" class="place" data-ref="#Florence">Firenze</a>, tra l'altro una camera di velluto cremisi con le colonne e
-         freggi di broccato, con il letto simile, fatti fare in <a href="../index/indexlieu/Florence.html" class="place" data-ref="#Florence">Firenze</a> a gusto ed a capriccio del barone Gondi; e perché <span class="person" data-ref="#JeromeDeGondi">Gerolamo
+         del <span class="person" data-ref="#FrancescoSalviati">Salviati</span>. Le camere addobbate con letti di broccato di <a href="../../index/indexlieu/Florence.html" class="place" data-ref="#Florence">Firenze</a>, tra l'altro una camera di velluto cremisi con le colonne e
+         freggi di broccato, con il letto simile, fatti fare in <a href="../../index/indexlieu/Florence.html" class="place" data-ref="#Florence">Firenze</a> a gusto ed a capriccio del barone Gondi; e perché <span class="person" data-ref="#JeromeDeGondi">Gerolamo
             Gondi</span> fu quello che conchiuse il parentado, perciò li porta affezione. Ha moglie e
          figli il detto barone, ed il suo ritratto stava, con l'armatura addosso, in una
          camera che s'è capata in questo luogo per sé la regina quando ci va, e va spesso.
@@ -37,11 +39,18 @@
          cappuccino, disteso per fianco in terra in mezzo a molti alberi, e questo era come
          un
          coperchio d'un specchio, e sotto v'era un quadro con una donna ignuda colcata per
-         fianco nell'istessa positura. Nella stalla poi v'erano cavalli di <a href="../index/indexlieu/Espagne.html" class="place" data-ref="#Espagne">Spagna</a> ed un sardo di gran vita, contro la natura de'
+         fianco nell'istessa positura. Nella stalla poi v'erano cavalli di <a href="../../index/indexlieu/Espagne.html" class="place" data-ref="#Espagne">Spagna</a> ed un sardo di gran vita, contro la natura de'
          sardi. </p>
       <footer>
          <hr>
          <p>Edition numérique par Arterm, 2025.</p>
-      </footer>
-   </body>
+      </footer><script>
+                            // Charger et insérer le header
+                            fetch("../../header.html")
+                            .then(response => response.text())
+                            .then(html => {
+                            document.getElementById("header").innerHTML = html;
+                            })
+                            .catch(err => console.error("Erreur de chargement du header :", err));
+                        </script></body>
 </html>

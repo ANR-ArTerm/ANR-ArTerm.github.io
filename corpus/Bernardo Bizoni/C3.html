@@ -4,10 +4,12 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Diario di viaggio di Vincenzo Giustiniani</title>
-      <link rel="stylesheet" type="text/css" href="../style.css">
+      <link rel="stylesheet" type="text/css" href="../../style.css">
    </head>
    <body>
+      <div id="header"></div>
       <h1>Diario di viaggio di Vincenzo Giustiniani</h1>
+      <p><a href="sommaire.html">Revenir au sommaire</a></p>
       <h2>La peinture de paysage, le pittoresque</h2>
       <p><span class="person" data-ref="#CristoforoRoncalli">Il Pomarancio</span> ed io passammo la riviera (sopra vi è un ponte di pietra bello ma al
          presente rotto) in una barca coperta di ... piena in un istante di uomini e donne,
@@ -17,13 +19,20 @@
          e
          fiaschi di vino, con provisione di magnare. Nel passare ci fu mostrata una nave, che
          il giorno precedente, urtandosi con un'altra, si sfondrò. Si ritornò di nuovo a far
-         collazione e si bevve del vino bianco di <a href="../index/indexlieu/Sicile.html" class="place" data-ref="#Sicile">Sicilia</a>
-         e moscatello che s'ebbe in <a href="../index/indexlieu/Venise.html" class="place" data-ref="#Venise">Venezia</a> dal Ferrari, e moscatello di Nocera, che avevano mantenuto
+         collazione e si bevve del vino bianco di <a href="../../index/indexlieu/Sicile.html" class="place" data-ref="#Sicile">Sicilia</a>
+         e moscatello che s'ebbe in <a href="../../index/indexlieu/Venise.html" class="place" data-ref="#Venise">Venezia</a> dal Ferrari, e moscatello di Nocera, che avevano mantenuto
          il colore e il sapore. Finita la collazione, si stette con gusto e con un poco di
          disgusto per impeto di vino. </p>
       <footer>
          <hr>
          <p>Edition numérique par Arterm, 2025.</p>
-      </footer>
-   </body>
+      </footer><script>
+                            // Charger et insérer le header
+                            fetch("../../header.html")
+                            .then(response => response.text())
+                            .then(html => {
+                            document.getElementById("header").innerHTML = html;
+                            })
+                            .catch(err => console.error("Erreur de chargement du header :", err));
+                        </script></body>
 </html>

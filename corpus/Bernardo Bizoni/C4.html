@@ -4,10 +4,12 @@
       <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Diario di viaggio di Vincenzo Giustiniani</title>
-      <link rel="stylesheet" type="text/css" href="../style.css">
+      <link rel="stylesheet" type="text/css" href="../../style.css">
    </head>
    <body>
+      <div id="header"></div>
       <h1>Diario di viaggio di Vincenzo Giustiniani</h1>
+      <p><a href="sommaire.html">Revenir au sommaire</a></p>
       <h2>Le Louvre</h2>
       <p>Dopo pranzo andassimo in carrozza e si vidde le <span class="object" data-ref="#PalaisTuileries">Tulerie [Tuileries]</span>, id est il giardino del re, con viali
          grandissimi, boschetti tramezzati con alcune casette, grotte e lochi lussuriosi fatti
@@ -29,12 +31,19 @@
          E per tutto poi vi è quest'impresa, un H e un M intrecciati insieme, che significa
          <span class="person" data-ref="#HenriIV">Henrico</span> e Monsciò [Montceaux], essendo la <span class="person" data-ref="#GabrielleDEstrees">Gabriela madama di Monsciò</span>. A basso si fa
          un salotto per il conseglio, pieno di nicchi con statue dentro e bellissime colonne
-         di pietre mischie. il tutto venuto da <a href="../index/indexlieu/Italie.html" class="place" data-ref="#Italie">Italia</a> e
-         da <a href="../index/indexlieu/Rome.html" class="place" data-ref="#Rome">Roma</a>. E tutti questi luoghi hanno la vista
+         di pietre mischie. il tutto venuto da <a href="../../index/indexlieu/Italie.html" class="place" data-ref="#Italie">Italia</a> e
+         da <a href="../../index/indexlieu/Rome.html" class="place" data-ref="#Rome">Roma</a>. E tutti questi luoghi hanno la vista
          della riviera. </p>
       <footer>
          <hr>
          <p>Edition numérique par Arterm, 2025.</p>
-      </footer>
-   </body>
+      </footer><script>
+                            // Charger et insérer le header
+                            fetch("../../header.html")
+                            .then(response => response.text())
+                            .then(html => {
+                            document.getElementById("header").innerHTML = html;
+                            })
+                            .catch(err => console.error("Erreur de chargement du header :", err));
+                        </script></body>
 </html>
