@@ -3,17 +3,30 @@
    <meta name="viewport" content="width=device-width, initial-scale=1">
    <title></title>
    <link rel="stylesheet" type="text/css" href="../style.css">
+   <style>
+                    input {
+                    width: 100%;
+                    padding: 10px;
+                    font-size: 16px;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;
+                    margin-bottom: 20px;
+                    }
+                    ul {
+                    list-style: none;
+                    padding: 0;
+                    }
+                    li {
+                    background: #fff;
+                    padding: 10px;
+                    margin-bottom: 5px;
+                    border-radius: 5px;
+                    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+                    }
+                </style>
 </head><body xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:xs="http://www.w3.org/2001/XMLSchema">
    <h1>Index des lieux</h1>
-   <ul>
-      <li><a href="indexlieu/DetroitDeGibraltar.html"></a></li>
-      <li><a href="indexlieu/ChateauneufDuPape.html"></a></li>
-      <li><a href="indexlieu/Mornas.html"></a></li>
-      <li><a href="indexlieu/Bollene.html"></a></li>
-      <li><a href="indexlieu/Civitavecchia.html"></a></li>
-      <li><a href="indexlieu/Calidonia.html"></a></li>
-      <li><a href="indexlieu/Adee.html"></a></li>
-      <li><a href="indexlieu/Cotton.html"></a></li>
+   <h2>Rechercher dans la liste</h2><input type="text" id="search_place" placeholder="Rechercher un lieu..."><ul id="list_place">
       <li><a href="indexlieu/Afrique.html">Afrique</a></li>
       <li><a href="indexlieu/Amerique.html">Amérique</a></li>
       <li><a href="indexlieu/Asie.html">Asie</a></li>
@@ -171,13 +184,7 @@
       <li><a href="indexlieu/Elide.html">district régional d'Élide</a></li>
       <li><a href="indexlieu/Athos.html">mont Athos</a></li>
       <li><a href="indexlieu/Egine.html">Égine</a></li>
-      <li><a href="indexlieu/.html">Cambay</a></li>
-      <li><a href="indexlieu/.html">Cambay</a></li>
-      <li><a href="indexlieu/.html">Cambay</a></li>
       <li><a href="indexlieu/Cambay.html">Cambay</a></li>
-      <li><a href="indexlieu/.html">Cambay</a></li>
-      <li><a href="indexlieu/.html">Cambay</a></li>
-      <li><a href="indexlieu/.html">Cambay</a></li>
       <li><a href="indexlieu/Ninive.html">Ninive</a></li>
       <li><a href="indexlieu/Skerries.html">Skerries</a></li>
       <li><a href="indexlieu/Cesaree.html">Césarée</a></li>
@@ -420,5 +427,19 @@
       <li><a href="indexlieu/Flandres.html">comté de Flandre</a></li>
       <li><a href="indexlieu/Macedoine.html">royaume de Macédoine</a></li>
       <li><a href="indexlieu/Portugal.html">royaume de Portugal</a></li>
-   </ul>
-</body>
+   </ul><script>
+                    const input = document.getElementById('search_place');
+                    const items = document.querySelectorAll('#list_place li');
+                    
+                    input.addEventListener('keyup', function() {
+                    const searchValue = input.value.toLowerCase();
+                    items.forEach(item => {
+                    const text = item.textContent.toLowerCase();
+                    if (text.includes(searchValue)) {
+                    item.style.display = '';
+                    } else {
+                    item.style.display = 'none';
+                    }
+                    });
+                    });
+                </script></body>
