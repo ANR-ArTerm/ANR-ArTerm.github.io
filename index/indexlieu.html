@@ -25,6 +25,7 @@
                     }
                 </style>
 </head><body xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <div id="header"></div>
    <h1>Index des lieux</h1>
    <h2>Rechercher dans la liste</h2><input type="text" id="search_place" placeholder="Rechercher un lieu..."><ul id="list_place">
       <li><a href="indexlieu/Afrique.html">Afrique</a></li>
@@ -442,4 +443,12 @@
                     }
                     });
                     });
-                </script></body>
+                </script><script>
+            // Charger et insérer le header
+            fetch("/header.html")
+            .then(response => response.text())
+            .then(html => {
+            document.getElementById("header").innerHTML = html;
+            })
+            .catch(err => console.error("Erreur de chargement du header :", err));
+        </script></body>
