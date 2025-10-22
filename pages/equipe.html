@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArTerm - Equipe</title>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <style>
+        /* Style simple pour les portraits en portrait (3:4) */
+        .portraits {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+            gap: 4rem;
+            align-items: start;
+            padding: 4rem;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .portrait-card {
+            text-align: center;
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+        }
+
+        .portrait-card a {
+            display: inline-block;
+            width: 100%;
+            max-width: 240px;
+            /* taille max du portrait */
+            margin: 0 auto;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .portrait-card img {
+            width: 100%;
+            /* forcer un ratio portrait (3/4) */
+            aspect-ratio: 3 / 4;
+            object-fit: cover;
+            display: block;
+            border-radius: 8px;
+            box-shadow: 0 6px 14px rgba(0, 0, 0, 0.08);
+            transition: transform .18s ease, box-shadow .18s ease;
+        }
+
+        .portrait-card a:hover img,
+        .portrait-card a:focus img {
+            transform: translateY(-4px) scale(1.02);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.12);
+        }
+
+        .portrait-card p {
+            margin: 0.5rem 0 0;
+            font-size: 0.95rem;
+            line-height: 1.3;
+            color: #222;
+        }
+
+        /* petit style pour accessibilité du focus sur le lien */
+        .portrait-card a:focus {
+            outline: 3px solid Highlight;
+            outline-offset: 4px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header"></div>
+    <section class="portraits" aria-label="Galerie de portraits">
+        <!-- Portrait 1 -->
+        <article class="portrait-card">
+            <a href="annasconza.html" title="Voir le profil d'Anna Sconza" aria-label="Ouvrir le profil d'Anna Sconza">
+                <img src="https://arterm.hypotheses.org/files/2023/11/IMG_20230913_185404-768x1024.jpg"
+                    alt="Anna Sconza – Porteuse du projet ANR">
+            </a>
+            <p>Anna Sconza – Porteuse du projet ANR.</p>
+        </article>
+
+        <!-- Portrait 2 -->
+        <article class="portrait-card">
+            <a href="juliacastiglione.html" title="Voir le profil de Julia Castiglione"
+                aria-label="Ouvrir le profil de Julia Castiglione">
+                <img src="https://arterm.hypotheses.org/files/2022/10/IMG_20170611_180721-1-768x1024.jpg"
+                    alt="Julia Castiglione – Porteuse du projet Emergence(s) Ville de Paris">
+            </a>
+            <p>Julia Castiglione – Porteuse du projet Emergence(s) Ville de Paris.</p>
+        </article>
+
+        <!-- Portrait 3 -->
+        <article class="portrait-card">
+            <a href="emmabondoerffer.html" title="Voir le profil d'Emma Bondoerffer"
+                aria-label="Ouvrir le profil d'Emma Bondoerffer">
+                <img src="https://arterm.hypotheses.org/files/2024/11/Emma-scaled-e1731930396370-768x994.jpg"
+                    alt="Emma Bondoerffer – Ingénieure de recherche en Humanités numériques">
+            </a>
+            <p>Emma Bondoerffer – Ingénieure de recherche en Humanités numériques.</p>
+        </article>
+
+        <!-- Portrait 4 -->
+        <article class="portrait-card">
+            <a href="anaismazoue.html" title="Voir le profil d'Anaïs Mazoué"
+                aria-label="Ouvrir le profil d'Anaïs Mazoué">
+                <img src="https://arterm.hypotheses.org/files/2024/11/IMG_7417-375x500.jpeg"
+                    alt="Anaïs Mazoué – Ingénieure de recherche en Humanités numériques">
+            </a>
+            <p>Anaïs Mazoué – Ingénieure de recherche en Humanités numériques.</p>
+        </article>
+
+    <!-- Portrait 5 -->
+    <article class="portrait-card">
+        <a href="pierrehusson.html" title="Voir le profil de Pierre Husson"
+            aria-label="Ouvrir le profil de Pierre Husson">
+            <img src="https://arterm.hypotheses.org/files/2025/10/DSCN0826-375x500.jpg"
+                alt="Pierre Husson – Ingénieur de recherche en Humanités numériques">
+        </a>
+        <p>Pierre Husson – Ingénieur de recherche en Humanités numériques.</p>
+    </article>
+    </section>
+
+    <script src="/scripts/header.js"></script>
+
+</body>
+
+</body>
+
+</html>
