@@ -14,24 +14,24 @@
       - Nom en italien : Lanuvio</p>
    <p><a href="https://www.wikidata.org/wiki/Q242793">Lien vers Wikidata</a></p>
    <div id="map"></div><script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script><script>
-                        // Coordonnées : latitude, longitude
-                        const lat = 41.683333333333;
-                        const lon = 12.7;
-                        
-                        const map = L.map('map').setView([lat, lon], 3);
-                        
-                        // Couche de fond OpenStreetMap
-                        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-                        attribution:
-                        '© <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
-                        maxZoom: 18,
-                        }).addTo(map);
-                        
-                        // Marqueur
-                        L.marker([lat, lon]).addTo(map)
-                        .bindPopup('<strong>Lanuvio</strong>')
+                            // Coordonnées : latitude, longitude
+                            const lat = 41.683333333333;
+                            const lon = 12.7;
+                            
+                            const map = L.map('map').setView([lat, lon], 3);
+                            
+                            // Couche de fond OpenStreetMap
+                            L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                            attribution:
+                            '© <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors',
+                            maxZoom: 18,
+                            }).addTo(map);
+                            
+                            // Marqueur
+                            L.marker([lat, lon]).addTo(map)
+                            .bindPopup('<strong>Lanuvio</strong>')
                             .openPopup();
-                    </script><script>
+                        </script><script>
             // Charger et insérer le header
             fetch("/header.html")
             .then(response => response.text())
