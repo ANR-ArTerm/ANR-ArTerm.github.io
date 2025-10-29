@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Diario del viaggio in Francia</title>
+      <link rel="stylesheet" type="text/css" href="../../style.css">
+   </head>
+   <body>
+      <div id="header"></div>
+      <h1>Diario del viaggio in Francia</h1>
+      <p><a href="sommaire.html">Revenir au sommaire</a></p>
+      <h2>Vienne, Eglise des Cordeliers</h2>
+      <p>«<a href="/index/indexlieu/Vienne.html" class="place" data-ref="#Vienne">Viena</a>, città, quale è bella et grande come
+         <a href="/index/indexlieu/Pavie.html" class="place" data-ref="#Pavie">Pavia</a>, et he archiepiscopatto; et li passa a cantto il
+         <span class="place">Rodano</span>, et de là dil Rodano li he uno loco quale si domanda
+         <a href="/index/indexlieu/SainteColombe.html" class="place" data-ref="#SainteColombe">Santta Columba</a>, ove li sono 3 o 4 belle giese, ma tra le
+         altre la <span class="object" data-ref="">giesa de Cordeglieri</span> he bellissima et ha il
+         conventto et li inchiostri bellissimi et grandissimi; se li va per un
+         <span class="object" data-ref="">pontte</span> quale è sopra il <span class="place">Rodano</span>, di
+         preda, assay bello.</p>
+      <footer>
+         <hr>
+         <p>Edition numérique par Arterm, 2025.</p>
+      </footer><script>
+                            // Charger et insérer le header
+                            fetch("/header.html")
+                            .then(response => response.text())
+                            .then(html => {
+                            document.getElementById("header").innerHTML = html;
+                            })
+                            .catch(err => console.error("Erreur de chargement du header :", err));
+                        </script></body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<html xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Diario del viaggio in Francia</title>
+      <link rel="stylesheet" type="text/css" href="../../style.css">
+   </head>
+   <body>
+      <div id="header"></div>
+      <h1>Diario del viaggio in Francia</h1>
+      <p><a href="sommaire.html">Revenir au sommaire</a></p>
+      <h2>Parigi, Notre-Dame</h2>
+      <p><span class="object" data-ref="">Nostra Dama</span> è una bellissima giesa et he longa passi 210 de
+         nostri et larga 70: li sono dui bellissimi et alti et ben grossi campanili, quali
+         loro li domandano le torre di Nostra Dama, et andando di sopra dicti campanili si
+         vede la città benissimo: sono alti scalini 320 [...]. All'intrare de la giesa a man
+         destra li he uno <span class="object" data-ref="">Santo Christoforo</span> di preda grande
+         fortte.</p>
+      <footer>
+         <hr>
+         <p>Edition numérique par Arterm, 2025.</p>
+      </footer><script>
+                            // Charger et insérer le header
+                            fetch("/header.html")
+                            .then(response => response.text())
+                            .then(html => {
+                            document.getElementById("header").innerHTML = html;
+                            })
+                            .catch(err => console.error("Erreur de chargement du header :", err));
+                        </script></body>
+</html>
